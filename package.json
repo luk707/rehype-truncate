@@ -2,7 +2,7 @@
   "name": "rehype-truncate",
   "version": "1.0.0",
   "description": "Rehype truncation",
-  "main": "index.js",
+  "main": "lib/index.js",
   "author": "Luke Harris <lukeharris01170@gmail.com>",
   "license": "MIT",
   "devDependencies": {
