@@ -5,6 +5,10 @@
   "main": "lib/index.js",
   "author": "Luke Harris <lukeharris01170@gmail.com>",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url: "https://github.com/luk707/rehype-truncate"
+  },
   "files": [
     "/lib"
   ],
