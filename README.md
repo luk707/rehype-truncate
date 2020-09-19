@@ -1,3 +1,5 @@
+[![<luk707>](https://circleci.com/gh/luk707/rehype-truncate.svg?style=shield)](https://app.circleci.com/pipelines/github/luk707/rehype-truncate)
+
 # rehype-truncate
 
 ```bash
