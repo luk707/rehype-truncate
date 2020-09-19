@@ -104,6 +104,7 @@ This results in the following:
 
 | Name         | Type        | Description                                       |
 | ------------ | ----------- | ------------------------------------------------- |
-| `maxChars`   | `number`    | The number of characters to truncate.             |
-| `ignoreTags` | `string[]?` | Ignore contents of certain tag names.             |
 | `disable`    | `boolean?`  | Disable truncation and return the document as is. |
+| `ellipses`   | `string?`   | Specify a custom ellipses string (default "…").   |
+| `ignoreTags` | `string[]?` | Ignore contents of certain tag names.             |
+| `maxChars`   | `number`    | The number of characters to truncate.             |

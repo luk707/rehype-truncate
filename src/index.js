@@ -1,7 +1,8 @@
 export default function rehypeTruncate({
+  disable = false,
+  ellipses = "\u2026",
   ignoreTags = [],
   maxChars = 120,
-  disable = false
 } = {}) {
   return truncator;
 
@@ -20,7 +21,7 @@ export default function rehypeTruncate({
         node.value = `${node.value.slice(
           0,
           node.value.length - (foundText - maxChars)
-        )}\u2026`;
+        )}${ellipses}`;
         return maxChars;
       }
     }
