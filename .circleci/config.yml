@@ -32,7 +32,6 @@ jobs:
   test:
     docker:
       - image: node:current-alpine
-    parallelism: 2
     steps:
       - attach_workspace:
           at: .
