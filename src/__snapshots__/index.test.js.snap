@@ -1,33 +1,5 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`rehype-parse ignores contents of ignored tags 1`] = `
-"<html><head></head>
-    <body>
-      <h1>Hello, World.</h1>
-      <p>This is an example document to test html truncation.</p>
-      <ul>
-        <li>List item 1</li>
-        <li>List item 2</li>
-        <li>List item 3</li>
-        <li>List item 4</li>
-      </ul>
-      <p>This example has a lis…</p></body></html>"
-`;
-
-exports[`rehype-parse supports custom ellipses 1`] = `
-"<html><head></head>
-    <body>
-      <h1>Hello, World.</h1>
-      <p>This is an example...</p></body></html>"
-`;
-
-exports[`rehype-parse truncates document correctly 1`] = `
-"<html><head></head>
-    <body>
-      <h1>Hello, World.</h1>
-      <p>This is an example…</p></body></html>"
-`;
-
 exports[`rehype-truncate ignores contents of ignored tags 1`] = `
 "<html><head></head>
     <body>
