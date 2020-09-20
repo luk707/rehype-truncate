@@ -38,12 +38,14 @@ jobs:
           at: .
       - run:
           name: Run tests
-          # circleci tests glob '**/*.test.js' | circleci tests split --split-by timings | xargs yarn test
-          command: yarn test
+          command: yarn test --ci --reporters=jest-junit
+          environment:
+            JEST_JUNIT_OUTPUT_DIR: ~/junit
+            JEST_JUNIT_OUTPUT_NAME: test-results.xml
       - store_artifacts:
-          path: test-results
+          path: ~/junit
       - store_test_results:
-          path: test-results
+          path: ~/junit
 
 workflows:
   version: 2
