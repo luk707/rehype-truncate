@@ -52,7 +52,7 @@ describe("rehype-truncate", () => {
   it("supports custom ellipses", async () => {
     const { contents: exampleDocument1Truncated } = await unified()
       .use(html)
-      .use(rehypeTruncate, { maxChars: 50, ellipses: "..." })
+      .use(rehypeTruncate, { maxChars: 50, ellipses: ".." })
       .use(stringify)
       .process(exampleDocument1);
 
