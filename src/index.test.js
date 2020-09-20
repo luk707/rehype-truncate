@@ -30,7 +30,7 @@ const exampleDocument2 = `
   </html>
 `;
 
-describe("rehype-parse", () => {
+describe("rehype-truncate", () => {
   it("truncates document correctly", async () => {
     const { contents: exampleDocument1Truncated } = await unified()
       .use(html)
