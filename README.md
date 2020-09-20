@@ -1,3 +1,4 @@
+[![npm](https://img.shields.io/npm/v/rehype-truncate)](https://www.npmjs.com/package/rehype-truncate)
 [![<luk707>](https://circleci.com/gh/luk707/rehype-truncate.svg?style=shield)](https://app.circleci.com/pipelines/github/luk707/rehype-truncate)
 
 # rehype-truncate
