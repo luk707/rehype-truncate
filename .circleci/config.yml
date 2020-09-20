@@ -38,14 +38,13 @@ jobs:
           at: .
       - run:
           name: Run tests
-          command: yarn test --ci --reporters=jest-junit
+          command: yarn test --ci --runInBand --reporters=default --reporters=jest-junit
           environment:
-            JEST_JUNIT_OUTPUT_DIR: ~/junit
-            JEST_JUNIT_OUTPUT_NAME: test-results.xml
-      - store_artifacts:
-          path: ~/junit
+            JEST_JUNIT_OUTPUT_DIR: ./reports/junit/
       - store_test_results:
-          path: ~/junit
+          path: ./reports/junit/
+      - store_artifacts:
+          path: ./reports/junit
 
 workflows:
   version: 2
