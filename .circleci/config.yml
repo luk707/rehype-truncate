@@ -3,7 +3,7 @@ version: 2.1
 orbs:
   node: circleci/docker@1.0.1
 
-workflows:
+jobs:
   prepare-dependencies:
     docker:
       - image: node:current-alpine
