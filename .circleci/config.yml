@@ -38,8 +38,8 @@ jobs:
           at: .
       - run:
           name: Run tests
-          command: |
-            circleci tests glob '**/*.test.js' | circleci tests split --split-by timings | xargs yarn test
+          # circleci tests glob '**/*.test.js' | circleci tests split --split-by timings | xargs yarn test
+          command: yarn test
       - store_artifacts:
           path: test-results
       - store_test_results:
