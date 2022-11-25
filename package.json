@@ -3,6 +3,7 @@
   "version": "1.2.2",
   "description": "Rehype truncation",
   "main": "lib/index.js",
+  "types": "./lib/index.d.ts",
   "author": "Luke Harris <lukeharris01170@gmail.com>",
   "license": "MIT",
   "repository": {
@@ -21,10 +22,11 @@
     "node-notifier": "^8.0.1",
     "rehype-parse": "^6.0.1",
     "rehype-stringify": "^6.0.0",
-    "unified": "^8.4.1"
+    "unified": "^8.4.1",
+    "typescript": "next"
   },
   "scripts": {
-    "build": "babel src --out-dir lib --ignore src/**/*.test.js",
+    "build": "npx -p typescript tsc src/index.*.js --declaration --allowJs --lib es2018 --emitDeclarationOnly --outDir lib && babel src --out-dir lib --ignore src/**/*.test.js",
     "test": "jest"
   }
 }
