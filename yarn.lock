@@ -4296,6 +4296,11 @@ type-check@~0.3.2:
   dependencies:
     prelude-ls "~1.1.2"
 
+typescript@next:
+  version "5.0.0-dev.20221125"
+  resolved "https://registry.yarnpkg.com/typescript/-/typescript-5.0.0-dev.20221125.tgz#05d8eb01d2cd17b8a78a167d890c02a0e149a210"
+  integrity sha512-5X4Uz1KiBZSF4QobfLgXNawzNROtx6Sibp4hkz1AYMUERoxwoVN3IbWnyyGe0dsiZsI7IFmwJMZurh2pxSE0SQ==
+
 unicode-canonical-property-names-ecmascript@^1.0.4:
   version "1.0.4"
   resolved "https://registry.yarnpkg.com/unicode-canonical-property-names-ecmascript/-/unicode-canonical-property-names-ecmascript-1.0.4.tgz#2619800c4c825800efdd8343af7dd9933cbe2818"
